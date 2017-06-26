@@ -29,9 +29,13 @@ public class InitMultiThreading {
 //		executorService.shutdown();
 //		System.out.println("Waiting for LiftOff");
 		
-		ExecutorService executorService = Executors.newCachedThreadPool(new LiftOffThreadFactory());
-		for(int i=0;i<5;i++)
-			executorService.execute(new LiftOff());
-		System.out.println("Waiting for LiftOff");
+//		ExecutorService executorService = Executors.newCachedThreadPool(new LiftOffThreadFactory());
+//		for(int i=0;i<5;i++)
+//			executorService.execute(new LiftOff());
+//		System.out.println("Waiting for LiftOff");
+		
+//		new LiftOffT();
+		
+		new InnerLiftOff();
 	}
 }
